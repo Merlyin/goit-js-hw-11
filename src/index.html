@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,40 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          class="input-area"
+        />
+        <button type="submit" class="submit-button">Search</button>
+      </form>
+    </div>
+    <ul class="gallery">
+      <!--Carduri cu imagini -->
+      <!-- <div class="photo-card">
+        <img src="index.html" class="test-image" alt="" loading="lazy" />
+        <div class="info">
+          <p class="info-item">
+            <b>Likes</b>
+          </p>
+          <p class="info-item">
+            <b>Views</b>
+          </p>
+          <p class="info-item">
+            <b>Comments</b>
+          </p>
+          <p class="info-item">
+            <b>Downloads</b>
+          </p>
+        </div>
+      </div> -->
+    </ul>
+    <div class="container">
+      <button class="load-more hide">Load More</button>
+    </div>
   </body>
 </html>
