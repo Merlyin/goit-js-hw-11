@@ -79,23 +79,7 @@ loadBtn.addEventListener('click', event => {
     });
 })
 
-// axios
-//     .get(URL)
-//     .then((response) =>
-//     {return response})
-//     .then((data) => {
-//         console.log(data);
-//         if(data.data.total == 0) {
-//             Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
-//         } else {
-//             fillGallery(data.data.hits);
-//             Notiflix.Notify.success();
-//         }
-//     })
-//     .catch(function(error) {
-        
-//         console.log(error);
-//     });
+
 
 function getQueryParams(searchQuery) {
     return new URLSearchParams({
@@ -103,7 +87,7 @@ function getQueryParams(searchQuery) {
         q: searchQuery,
         image_type: "photo",
         orientation: "horizontal",
-        safesearch: false,
+        safesearch: true,
         page: currentPage,
         per_page: 40
     })
