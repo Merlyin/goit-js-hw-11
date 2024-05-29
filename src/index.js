@@ -87,7 +87,7 @@ function getQueryParams(searchQuery) {
         q: searchQuery,
         image_type: "photo",
         orientation: "horizontal",
-        safesearch: true,
+        safesearch: false,
         page: currentPage,
         per_page: 40
     })
